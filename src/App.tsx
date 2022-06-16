@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -9,13 +9,13 @@ import HeresySheet from "./HeresySheet/HeresySheet";
 
 function App() {
   return (
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path="/jogul" element={<HeresySheet name="Jogul"/>} />
           <Route path="/" element={<Dashboard />} />
           <Route path="*" element={<Dashboard />} />
         </Routes>
-      </Router>
+      </HashRouter>
   );
 }
 
