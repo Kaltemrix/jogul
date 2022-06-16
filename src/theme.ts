@@ -8,6 +8,12 @@ const theme = createTheme({
             dark: "#2D728B" 
         },
     },
+    typography: {
+        h1: {
+            fontSize: 56,
+            fontWeight: "bolder"
+        }
+    }
 });
 
 export default theme;
