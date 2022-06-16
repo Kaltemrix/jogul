@@ -1,21 +1,24 @@
 import React from "react";
 import {
-  HashRouter,
-  Routes,
+  BrowserRouter,
   Route,
+  Switch,
 } from "react-router-dom";
 import Dashboard from './Dashboard/Dashboard';
 import HeresySheet from "./HeresySheet/HeresySheet";
 
 function App() {
   return (
-      <HashRouter>
-        <Routes>
-          <Route path="/jogul" element={<HeresySheet name="Jogul"/>} />
-          <Route path="/" element={<Dashboard />} />
-          <Route path="*" element={<Dashboard />} />
-        </Routes>
-      </HashRouter>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/jogul">
+            <HeresySheet />
+          </Route>
+          <Route path="/">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </BrowserRouter>
   );
 }
 

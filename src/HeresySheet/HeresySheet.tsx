@@ -20,7 +20,7 @@ const Background = styled('div', {
 }));
 
 interface HeresySheetProps {
-    name: string
+    name?: string
 }
 
 const HeresySheet: FC<HeresySheetProps> = ({
@@ -29,7 +29,7 @@ const HeresySheet: FC<HeresySheetProps> = ({
     return (
         <>
             <Background opacity="0">
-                <Typography variant="h1" color="black">{name} Sheet</Typography>
+                <Typography variant="h1" color="black">{name || "Jogul"} Sheet</Typography>
             </Background>
         </>
     )

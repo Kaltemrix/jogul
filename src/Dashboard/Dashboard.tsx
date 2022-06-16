@@ -1,5 +1,6 @@
 import { BoxProps, Link, styled, Typography } from "@mui/material";
 import PewsImage from "./../img/pews.jpg"
+import { useHistory } from "react-router-dom";
 interface StyledBoxProps extends BoxProps {
     image?: string;
     opacity?: string;
@@ -20,6 +21,8 @@ const Background = styled('div', {
 }));
 
 function Dashboard () {
+    const history = useHistory()
+
     return (
         <>
             <Background
@@ -33,7 +36,12 @@ function Dashboard () {
             </Background>
             <Background opacity="0">
                 <Typography variant="h1" color="black">Our Brothers</Typography>
-                <Link variant="h6" color="inherit" href="/jogul">Jogul</Link>
+                <Link 
+                    variant="h6" 
+                    color="inherit" 
+                    onClick={() => {history.push("/jogul")}} 
+                    href=""
+                >Jogul</Link>
             </Background>
         </>
     )
