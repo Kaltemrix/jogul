@@ -5,14 +5,14 @@ import {
   Switch,
 } from "react-router-dom";
 import Dashboard from './Dashboard/Dashboard';
-import HeresySheet from "./HeresySheet/HeresySheet";
+import HeresySheetRedux from "./HeresySheet/HeresySheetRedux";
 
 function App() {
   return (
       <BrowserRouter>
         <Switch>
           <Route path="/jogul">
-            <HeresySheet />
+            <HeresySheetRedux />
           </Route>
           <Route path="/">
             <Dashboard />
