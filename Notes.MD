@@ -26,4 +26,19 @@
         - Holy Relic
           - 
   - Session Notes
-    - 
+
+- Add Sanity and Corrution Tracker
+- 16 Corruption
+- 4 Sanity
+- HP: 6/13
+- XP: 850px
+
+# Ammo
+- Flamer Fuel X 4
+- Blessed Flamer Fuel X 1
+# Final Session
+-  Data log from Chronos incident
+-  "Come fellow heretic" probably from Dufresne
+-  Meet Krell deep in the hive.
+-  He is a heretic.
+-  
